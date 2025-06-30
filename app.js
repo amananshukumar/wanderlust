@@ -128,6 +128,9 @@ app.use('/', userRouter);
 //          res.send("Sample listing saved to database:" );
 // });
 
+app.get('/', (req, res) => {
+    res.redirect('/listings');
+});
 
 
 app.use((err,req, res, next) => { 
